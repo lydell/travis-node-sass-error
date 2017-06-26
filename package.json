@@ -1,7 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "sass-brunch": "github:brunch/sass-brunch#7ffb2e6ebb7380f920a2f594476a3db0654b11b9"
   },
   "scripts": {
     "test": "node-sass --version"
