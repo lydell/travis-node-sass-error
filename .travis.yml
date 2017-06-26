@@ -3,6 +3,6 @@ language: python
 python:
   - 2.7
 install:
-  - nvm install 6
+  - nvm install 8
   - npm install
 script: npm test
