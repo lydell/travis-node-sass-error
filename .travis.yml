@@ -6,7 +6,7 @@ python:
 install:
   - nvm install 8
   - npm install
-script: npm test
+script: npm $TARGET
 cache:
   directories:
     - node_modules
@@ -16,3 +16,6 @@ addons:
 services:
   - postgresql
   - rabbitmq
+env:
+  matrix:
+    - TARGET=test
