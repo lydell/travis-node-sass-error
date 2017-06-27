@@ -19,3 +19,7 @@ services:
 env:
   matrix:
     - TARGET=test
+  global:
+    ES_VERSION: latest
+before_install:
+  - mkdir /tmp/elasticsearch-next && wget -O - https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz | tar xz --directory=/tmp/elasticsearch-next --strip-components=1
